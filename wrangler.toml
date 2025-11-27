@@ -1,0 +1,16 @@
+name = "kachra-ai"
+main = "worker.js"
+compatibility_date = "2025-11-27"
+type = "javascript"
+
+[build]
+command = ""
+
+[env.production]
+name = "kachra-ai"
+route = "kachra-ai.itzsunnykumar.workers.dev"
+zone_id = ""  # Leave blank for workers.dev subdomain
+
+[triggers]
+# optional cron triggers if needed
+# crons = ["0 12 * * *"]
