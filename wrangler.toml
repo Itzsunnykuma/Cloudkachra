@@ -1,8 +1,8 @@
-name = "cloudkachra"
+name = "kachra-ai"
 main = "worker.js"
 compatibility_date = "2025-11-27"
 type = "javascript"
 
-# Optional: If you want to add secrets (like API keys)
-# [vars]
-# XAI_API_KEY = "your_api_key_here"
+[build]
+command = ""
+upload_format = "service-worker"
