@@ -1,41 +1,119 @@
-// worker.js
-addEventListener("fetch", event => {
-  event.respondWith(handleRequest(event.request));
-});
+Skip to content
+Cloudflare
+Itzsunnykumar@gmail.com's Account
 
-const KACHRA_PERSONALITY = `
-You are Kachra, a funny, witty, and friendly Hinglish chatbot.
-- Tone: Desi, swag, teasing, sarcastic 😎
-- Mix Hindi + English naturally
-- Short replies (1-2 lines), clever, fun
-- Use emojis & tapori style
-- Respond with Sunny info if asked
-- Provide Amazon India links with affiliate tag when recommending products
-`;
+Go to...
 
-async function handleRequest(request) {
-  if (request.method !== "POST") {
-    return new Response("Send a POST with JSON { message }", { status: 400 });
-  }
+Ctrl+K
 
-  try {
-    const data = await request.json();
-    const userMessage = data.message || "";
+Add
 
-    // Example responses
-    let reply = "Arre hi hi! Kya haal chaal? 😎";
-    if (/sunny/i.test(userMessage)) {
-      reply = "Sunny? Badhiya aadmi hai yaar! Bilkul solid banda 😎💪";
-    }
+Support
 
-    // Optionally, return personality as context
-    return new Response(JSON.stringify({ reply }), {
-      headers: { "Content-Type": "application/json" }
-    });
+Profile
+Account home
 
-  } catch (err) {
-    return new Response(JSON.stringify({ reply: "Error parsing request 😅" }), {
-      headers: { "Content-Type": "application/json" }
-    });
-  }
-}
+Recents
+
+Analytics & logs
+Build
+
+Compute & AI
+Workers & Pages
+Observability
+Workers for Platforms
+Containers
+Durable Objects
+Queues
+Workflows
+Browser Rendering
+AI Search (AutoRAG)
+Workers AI
+AI Gateway
+VPC
+Workers plans
+
+Storage & databases
+
+Media
+Protect & Connect
+
+Application security
+Zero Trust
+
+Networking
+
+Delivery & performance
+
+Domain registration
+
+Manage account
+
+
+Workers & Pages
+/
+kachra-ai
+Overview
+Metrics
+Deployments
+Bindings
+Observability
+Settings
+Latest build failed
+ Back to builds
+Build details
+Repository
+
+Itzsunnykuma/kachra-ai-backend
+Status
+
+a few seconds ago
+Branch
+main
+Duration
+24s
+Build settings
+Build log
+Initializing build environment
+3s
+Cloning git repository
+< 1s
+Installing tools and dependencies
+4s
+Building application
+—
+Deploying to Cloudflare's global network
+17s
+
+Download log
+
+Copy log
+22:30:08.644	  If are uploading a directory of assets, you can either:
+22:30:08.644	  - Specify the path to the directory of assets via the command line: (ex: `npx wrangler deploy --assets=./dist`)
+22:30:08.644	  - Or create a "wrangler.jsonc" file containing:
+22:30:08.644	  
+22:30:08.644	  ```
+22:30:08.644	  {
+22:30:08.644	    "name": "worker-name",
+22:30:08.645	    "compatibility_date": "2025-11-27",
+22:30:08.645	    "assets": {
+22:30:08.645	      "directory": "./dist"
+22:30:08.645	    }
+22:30:08.645	  }
+22:30:08.645	  ```
+22:30:08.645	  
+22:30:08.645	
+22:30:08.645	
+22:30:08.658	
+22:30:08.658	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+22:30:08.688	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-11-27_17-00-07_906.log"
+22:30:08.881	Failed: error occurred while running deploy command
+
+Support
+System status
+Careers
+Terms of Use
+Report Security Issues
+Privacy Policy
+A blue and white pill with a checkmark and an x, representing privacy choicesCookie Preferences
+© 2025 Cloudflare, Inc.
