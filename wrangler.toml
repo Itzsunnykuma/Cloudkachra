@@ -1,16 +1,8 @@
-name = "kachra-ai"
+name = "cloudkachra"
 main = "worker.js"
 compatibility_date = "2025-11-27"
 type = "javascript"
 
-[build]
-command = ""
-
-[env.production]
-name = "kachra-ai"
-route = "kachra-ai.itzsunnykumar.workers.dev"
-zone_id = ""  # Leave blank for workers.dev subdomain
-
-[triggers]
-# optional cron triggers if needed
-# crons = ["0 12 * * *"]
+# Optional: If you want to add secrets (like API keys)
+# [vars]
+# XAI_API_KEY = "your_api_key_here"
